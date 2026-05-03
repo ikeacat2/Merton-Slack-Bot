@@ -9,7 +9,7 @@ scope = [
 ]
 
 # Load credentials from environment variable or file
-creds_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+creds_json = os.getenv("GOOGLE_CREDENTIALS")
 if creds_json:
     creds_dict = json.loads(creds_json)
     creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
