@@ -2,7 +2,7 @@ name: Chore Bot
 
 on:
   schedule:
-    - cron: '0 16 * * *'  # runs daily at 9am PST (adjust if needed)
+    - cron: '0 17 * * *'  # runs daily at 9am PST (adjust if needed)
   workflow_dispatch:       # lets you run manually
 
 jobs:

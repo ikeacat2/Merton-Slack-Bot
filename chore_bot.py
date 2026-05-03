@@ -8,7 +8,7 @@ from slack_sdk import WebClient
 # --- CONFIG ---
 SPREADSHEET_NAME = "S26 Merton Chores"
 SLACK_TOKEN = os.getenv("SLACK_TOKEN")
-SLACK_CHANNEL = "#chores"
+SLACK_CHANNEL = "#chore-pics"
 
 if not SLACK_TOKEN:
     raise ValueError("SLACK_TOKEN environment variable not set")
