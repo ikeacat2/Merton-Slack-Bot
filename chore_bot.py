@@ -7,11 +7,11 @@ from slack_sdk import WebClient
 
 # --- CONFIG ---
 SPREADSHEET_NAME = "S26 Merton Chores"
-SLACK_TOKEN = os.getenv("SLACK_BOT_TOKEN")
+SLACK_TOKEN = os.getenv("SLACK_TOKEN")
 SLACK_CHANNEL = "#chores"
 
 if not SLACK_TOKEN:
-    raise ValueError("SLACK_BOT_TOKEN environment variable not set")
+    raise ValueError("SLACK_TOKEN environment variable not set")
 
 # --- GOOGLE SHEETS SETUP ---
 scope = [
